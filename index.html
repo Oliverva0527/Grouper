@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Totally Safe Button</title>
+</head>
+<body>
+  <button onclick="rickroll()">Click me</button>
+
+  <div id="video"></div>
+
+  <script>
+    function rickroll() {
+      document.getElementById("video").innerHTML = `
+        <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>`;
+    }
+  </script>
+</body>
+</html>
